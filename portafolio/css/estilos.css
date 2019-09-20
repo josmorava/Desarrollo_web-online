@@ -1,8 +1,5 @@
 /**/
 
-header {
-    background-color: green ;
-}
 
 body{
     font-family:'Source Sans Pro', sans-serif;
@@ -15,4 +12,51 @@ h4,
 h5,
 h6{
     font-family: 'Fjalla One', sans-serif;
+    /*anchura de fuente*/
+    font-weight: normal;
+    /* cursiva font-style: italic;*/
 }
+
+h1{
+    /*alto de linea*/
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: -.2px;
+    /*Primera letra en mayúscula*/
+    text-transform: capitalize;
+    text-decoration: dashed;
+    color: white;
+}
+
+h1 strong{
+    color: #026fff;
+}
+.hero{
+height: 300px;
+/*imagen de fondo*/
+background-image: url('../imagenes/hero.jpg');
+/*estilos de imagen de fondo*/
+background-size: 500px 300px;
+/*repetición de imagenes de fondo a través de patrones*/
+background-repeat: no-repeat;
+background-position-x: right;
+background-color: #1d252c;
+}
+
+.project-details{
+    width: 500px;
+}
+
+.project-imageContainer{
+    width: 500px;
+}
+.header{
+    background-color:#1d252c;
+    color: white;
+
+}
+ /*estilos solamente para los enlaces del header*/
+ .header a{
+     color: white;
+     text-decoration: none;
+ }
