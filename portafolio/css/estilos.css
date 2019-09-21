@@ -6,6 +6,10 @@
     background-color:#1d252c;
     color: white;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 70px;
 
 }
  /*estilos solamente para los enlaces del header*/
@@ -13,9 +17,68 @@
      color: white;
      text-decoration: none;
  }
+ .header ol{
+     display: flex;
+     height: inherit;
+ }
+
+ .header ol li{
+     height: inherit;
+    }
+    
+.header a{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+ ol, ul
+{
+margin:0px;
+padding: 0;
+list-style: none;
+}
+
+.menu{
+    height: inherit;
+}
 /*###########################
 ##########HERO###########
 ########################### */
+
+.hero{
+    height: 300px;
+    /*imagen de fondo*/
+    background-image: url('../imagenes/hero.jpg');
+    /*estilos de imagen de fondo*/
+    background-size: 500px 300px;
+    /*repetición de imagenes de fondo a través de patrones*/
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #1d252c;
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+
+    }
+
+    h1{
+        /*alto de linea*/
+        line-height: 1.5;
+        font-size: 40px;
+        letter-spacing: -.2px;
+        /*Primera letra en mayúscula*/
+        text-transform: capitalize;
+        text-decoration: dashed;
+        color: white;
+        margin: 0;
+         
+    }
+    
+    h1 strong{
+        color: #026fff;
+    }
 
 
 /*###########################
@@ -29,11 +92,27 @@
   /*    border-width: 15px;
      border-style:solid; */
      border-radius: 15px;
-     border: 2px solid black;
+     border: 1px solid black;
      margin-bottom: 15px;
      padding: 20px;
      margin: 10px;
     background-color: white;
+
+
+   /*permite alinar elementos de forma horizontal 
+    justify-content: */
+    
+    /*forma de organizar los elementos dentro del website
+    en columnas,filas, ect.
+    flex-direction:  */
+
+    /*permite alinear elementos de forma vertical
+    align-items: ;*/
+
+    /* permite asignarle un máximo de tamaño de la caja de lugar
+    de trabajo; se le agg más megen, padding, o bode no sobrepasará
+    el tamaño máximo asingnado con width and height
+    box-sizing: border-box; */
  }
 
  .portfolio{
@@ -61,6 +140,25 @@
 ##########FOOTER###########
 ########################### */
 
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    /* alineación vertical de los elementos */
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+
+
+
  /*###########################
 ##########GLOBALS###########
 ########################### */
@@ -81,35 +179,8 @@ h6{
     /* cursiva font-style: italic;*/
 }
 
-h1{
-    /*alto de linea*/
-    line-height: 1.5;
-    font-size: 40px;
-    letter-spacing: -.2px;
-    /*Primera letra en mayúscula*/
-    text-transform: capitalize;
-    text-decoration: dashed;
-    color: white;
-     
+figure{
+    margin: 0;
 }
 
-h1 strong{
-    color: #026fff;
-}
-.hero{
-height: 300px;
-/*imagen de fondo*/
-background-image: url('../imagenes/hero.jpg');
-/*estilos de imagen de fondo*/
-background-size: 500px 300px;
-/*repetición de imagenes de fondo a través de patrones*/
-background-repeat: no-repeat;
-background-position-x: right;
-background-color: #1d252c;
-margin-top: 0px;
-}
 
-ol,h1
-{
-margin:0px;
-}
