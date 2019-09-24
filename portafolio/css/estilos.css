@@ -91,12 +91,13 @@ list-style: none;
      border-bottom: 10px solid pink;*/
   /*    border-width: 15px;
      border-style:solid; */
-     border-radius: 15px;
+     border-radius: 10px;
      border: 1px solid black;
      margin-bottom: 15px;
      padding: 20px;
-     margin: 10px;
+     /* margin: 10px; */
     background-color: white;
+
 
 
    /*permite alinar elementos de forma horizontal 
@@ -114,23 +115,112 @@ list-style: none;
     el tamaño máximo asingnado con width and height
     box-sizing: border-box; */
  }
+ 
+ h2{
+     color: #026fff;
+     text-transform: uppercase;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: bold;
+     font-size: 24px;
+     margin-bottom: 40px;
+ }
 
  .portfolio{
      background-color:#FAFAFA;
+     padding: 20px;
+
  }
- 
+ .project-container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
  .project-details{
      width: 500px;
+     display: block;
  }
  
- .project-imageContainer{
-     width: 500px;
- }
+.project-imageContainer{
+    width: 500px;
+    display: block;
+}
  
+ .project-title{
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom: 10px;
+ }
+
+ .project-date, .project-course, .project-url{
+    margin: 10px 0;
+    width: 500px;
+ }
+
+ .project-description{
+     font-size: 20px;
+ }
+
+ .project strong{
+     font-family: 'Fjalla One', sans-serif;
+ }
+
 
 /*###########################
 ##########EVENTOS###########
 ########################### */
+.event-list{
+    display: flex;
+}
+
+.event{
+    border: 1px solid black;
+    margin: 10px;
+    width: 480px ;
+    border-radius: 10px ;
+    /**/
+    overflow: hidden;
+    /**/
+    flex-shrink: 0;
+    background-color:#e3f0f8 ;
+
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top:-40px;
+    background-color: white;
+    /**/
+    position: relative;
+    /* border: 1px solid black; */
+    padding:20px;
+    /*alineación de texto*/
+    text-align: center;
+    border-radius: 5px;
+}
+
+.event-list-title{
+    margin-left: 10px;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    /*cambiar proporciones de la imagen*/ 
+    object-fit: cover;   
+}
+
+.event-url{
+    padding:5px 40px ;
+    border: 1px solid #056fff;
+    text-decoration: none;
+    color: #026fff;
+    border-radius: 5px;
+}
 
 /*###########################
 ##########CONTACTO###########
