@@ -50,17 +50,22 @@ list-style: none;
 .hero{
     height: 300px;
     /*imagen de fondo*/
-    background-image: url('../imagenes/hero.jpg');
+  /*   background-image: url('../imagenes/hero.jpg'); */
     /*estilos de imagen de fondo*/
-    background-size: 500px 300px;
+    /* background-size: 500px 300px; */
     /*repetición de imagenes de fondo a través de patrones*/
-    background-repeat: no-repeat;
-    background-position-x: right;
+   /*  background-repeat: no-repeat; */
+    /* background-position-x: right; */
     background-color: #1d252c;
     margin-top: 0px;
     align-items: center;
     display: flex;
+    justify-content: space-between;
+    }
 
+    .hero-image{
+        /*optimizar a las direcciones originales de la imagen*/
+        object-fit: cover;
     }
 
     h1{
@@ -171,10 +176,11 @@ list-style: none;
 ########################### */
 .event-list{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .event{
-    border: 1px solid black;
+    
     margin: 10px;
     width: 480px ;
     border-radius: 10px ;
@@ -338,5 +344,18 @@ h6{
 figure{
     margin: 0;
 }
+
+.container{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width:1000px;
+    /*elementos eredados*/
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
 
 
